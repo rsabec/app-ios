@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75FE49D45361921D0DD502AB /* Pods_app_ios2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0F9871340ECB6F7DAE752A /* Pods_app_ios2.framework */; };
 		9750034A2218945C00213DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975003492218945C00213DA1 /* AppDelegate.swift */; };
 		9750034C2218945C00213DA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750034B2218945C00213DA1 /* ViewController.swift */; };
 		9750034F2218945C00213DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9750034D2218945C00213DA1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E0F9871340ECB6F7DAE752A /* Pods_app_ios2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_ios2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		975003462218945C00213DA1 /* app-ios2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-ios2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975003492218945C00213DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9750034B2218945C00213DA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		975003502218945D00213DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975003532218945D00213DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		975003552218945D00213DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C748E57B155175EA8243897D /* Pods-app-ios2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-ios2.release.xcconfig"; path = "Target Support Files/Pods-app-ios2/Pods-app-ios2.release.xcconfig"; sourceTree = "<group>"; };
+		D55A2929E040C5CBB241EFF3 /* Pods-app-ios2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-ios2.debug.xcconfig"; path = "Target Support Files/Pods-app-ios2/Pods-app-ios2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FE49D45361921D0DD502AB /* Pods_app_ios2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53745328A13FD39B2BFCDFF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D55A2929E040C5CBB241EFF3 /* Pods-app-ios2.debug.xcconfig */,
+				C748E57B155175EA8243897D /* Pods-app-ios2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9750033D2218945C00213DA1 = {
 			isa = PBXGroup;
 			children = (
 				975003482218945C00213DA1 /* app-ios2 */,
 				975003472218945C00213DA1 /* Products */,
+				53745328A13FD39B2BFCDFF7 /* Pods */,
+				9820F2F343466FAC08C31C92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = "app-ios2";
 			sourceTree = "<group>";
 		};
+		9820F2F343466FAC08C31C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E0F9871340ECB6F7DAE752A /* Pods_app_ios2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 975003582218945D00213DA1 /* Build configuration list for PBXNativeTarget "app-ios2" */;
 			buildPhases = (
+				4C3E26522DDEB69DB9FF4200 /* [CP] Check Pods Manifest.lock */,
 				975003422218945C00213DA1 /* Sources */,
 				975003432218945C00213DA1 /* Frameworks */,
 				975003442218945C00213DA1 /* Resources */,
+				9A244248E6D85BD8D8DBBC7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C3E26522DDEB69DB9FF4200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-app-ios2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A244248E6D85BD8D8DBBC7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-app-ios2/Pods-app-ios2-frameworks.sh",
+				"${PODS_ROOT}/TealiumCrashReporter/TealiumCrashReporteriOS.framework",
+				"${BUILT_PRODUCTS_DIR}/tealium-swift/TealiumSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealiumCrashReporteriOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealiumSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-app-ios2/Pods-app-ios2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		975003422218945C00213DA1 /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		975003592218945D00213DA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55A2929E040C5CBB241EFF3 /* Pods-app-ios2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		9750035A2218945D00213DA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C748E57B155175EA8243897D /* Pods-app-ios2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
